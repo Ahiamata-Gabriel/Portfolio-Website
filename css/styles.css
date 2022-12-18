@@ -76,7 +76,8 @@ section {
 
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background: linear-gradient(180deg, #4b8178 0%, #580e3c 97.92%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    linear-gradient(180deg, #4b8178 0%, #580e3c 97.92%);
 }
 
 ::-webkit-scrollbar-thumb {
