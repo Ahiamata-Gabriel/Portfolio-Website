@@ -1,0 +1,48 @@
+/* /////////////// FOR NAV DISPLAYS ONLY ///////////////////// */
+@media (min-width: 1201px) {
+  /* ////////////////// */
+  .floating__nav__items {
+    display: none;
+  }
+}
+
+/* *** Desktops *** */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  /* ////////////////// */
+  .floating__nav__items {
+    display: none;
+  }
+}
+
+/* *** Laptops *** */
+@media (min-width: 769px) and (max-width: 1023px) {
+  /* ////////////////// */
+  .floating__nav__items {
+    display: none;
+  }
+}
+
+/* *** Tablets *** */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ////////////////// */
+  .header__navLinks {
+    display: none;
+  }
+}
+
+/* *** Mobile phones *** */
+@media (min-width: 320px) and (max-width: 480px) {
+  /* ////////////////// */
+  .header__navLinks {
+    display: none;
+  }
+}
+
+/* /////////////// FOR NAV DISPLAYS ONLY ///////////////////// */
+/* *** Smaller  phones *** */
+@media (max-width: 319px) {
+  /* ////////////////// */
+  .header__navLinks {
+    display: none;
+  }
+}

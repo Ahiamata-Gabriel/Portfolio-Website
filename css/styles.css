@@ -12,6 +12,7 @@
   --backgrouns-color: #ffffff;
   --black: #000000;
   --white: #ffffff;
+  --hover-green: #144a41;
 }
 
 html {
@@ -21,6 +22,8 @@ html {
 
 body {
   font-family: 'Outfit', sans-serif;
+  background-color: var(--white);
+  color: var(--white);
 }
 
 body.dark-mode {
@@ -35,41 +38,142 @@ body.dark-mode {
   --white: rgba(255, 255, 255, 0.8);
 }
 
-.main-container {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
-  height: 100vh;
+.container {
+  margin: 0 auto 0 auto;
+  max-width: 1201px;
 }
 
-section {
-  height: 100vh;
-  scroll-snap-align: start;
+/* *** HEADER  *****/
+
+.header {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 0.8rem 0 0.8rem 0;
 }
 
-.home-section {
-  background-color: #fff;
-  color: #580e3c;
+.header__contents {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.about-section {
-  background-color: #580e3c;
-  color: #fff;
+.logo__container a {
+  text-decoration: none;
+  color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  letter-spacing: 0.2px;
+  padding: 0;
+  transition: 300ms;
 }
 
-.skills-section {
-  background-color: #4b8178;
-  color: #fff;
+.nav__list a {
+  position: relative;
 }
 
-.projects-section {
-  background-color: #fff;
-  color: #580e3c;
+.nav__list a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--white);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
 
-.footer-section {
-  background-color: #580e3c;
-  color: #fff;
-  height: 40vh;
+.nav__list a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav__lists {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  border: 0.5px solid var(--white);
+  padding: 0 2rem 0 2rem;
+  border-radius: 2rem;
+}
+
+.nav__list a {
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.cv__container {
+  display: flex;
+  gap: 2rem;
+}
+
+.cv__container a,
+.cv__container i {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.cv__container i {
+  font-size: 2rem;
+}
+
+.download__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0 1.5rem 0 1.5rem;
+  border-radius: 2rem;
+  transition: background-color 300ms ease-in;
+}
+
+.download__container:hover {
+  background-color: var(--hover-green);
+}
+
+/* *** FLOATING FOOTER *****/
+.floating__nav {
+  bottom: 2rem;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.floating__nav__items {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.2rem;
+  padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+  border-radius: 2rem;
+}
+
+.navbar__icon {
+  display: flex;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.navbar__icon .bx {
+  padding: 0.2rem;
+  color: var(--white);
 }
 
 /* *** SCROLL BAR *****/
@@ -86,6 +190,6 @@ section {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #000000;
+  background-color: #878383;
   border-radius: 0.5em;
 }
