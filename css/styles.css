@@ -40,6 +40,7 @@ body.dark-mode {
 
 .container {
   margin: 0 auto 0 auto;
+  padding: 0 7rem 0 7rem;
   max-width: 1201px;
 }
 
@@ -146,8 +147,6 @@ body.dark-mode {
 
 /* *** FLOATING FOOTER *****/
 .floating__nav {
-  bottom: 2rem;
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,6 +154,8 @@ body.dark-mode {
 }
 
 .floating__nav__items {
+  bottom: 2rem;
+  position: fixed;
   background-color: var(--primary-color);
   display: flex;
   justify-content: center;
