@@ -13,6 +13,16 @@
   --black: #000000;
   --white: #fff;
   --hover-green: #144a41;
+  --hero-text-color: #580e3c;
+}
+
+.dark-mode {
+  /* --primary-color: #460c2f; */
+  --primary-color: #230618;
+  --secondary-color: #4b8178;
+  --background-color: #1f1d2b;
+  --white: rgba(255, 255, 255, 0.8);
+  --hero-text-color: rgba(255, 255, 255, 0.8);
 }
 
 html {
@@ -24,6 +34,7 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--background-color);
   color: var(--white);
+  transition: color 300ms ease-in, background-color 300ms ease-in;
 }
 
 .container {
@@ -39,6 +50,7 @@ body {
   padding: 0.8rem 0 0.8rem 0;
   position: fixed;
   top: 0;
+  transition: background-color 300ms ease-in;
 }
 
 .header__contents {
@@ -58,6 +70,7 @@ body {
   letter-spacing: 0.2px;
   padding: 0;
   transition: 300ms;
+  transition: color 300ms ease-in;
 }
 
 .nav__list a {
@@ -75,7 +88,7 @@ body {
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in;
 }
 
 .nav__list a:hover::before {
@@ -93,12 +106,14 @@ body {
   border: 0.5px solid var(--white);
   padding: 0 2rem 0 2rem;
   border-radius: 2rem;
+  transition: border 300ms ease-in;
 }
 
 .nav__list a {
   color: var(--white);
   text-decoration: none;
   letter-spacing: 0.2px;
+  transition: color 300ms ease-in;
 }
 
 .cv__container {
@@ -114,6 +129,7 @@ body {
   line-height: 3.4rem;
   text-decoration: none;
   letter-spacing: 0.2px;
+  transition: color 300ms ease-in;
 }
 
 .cv__container i {
@@ -133,6 +149,7 @@ body {
 
 .download__container:hover {
   background-color: var(--hover-green);
+  transition: background-color 300ms ease-in;
 }
 
 /* *** FLOATING NAVIGATION *****/
@@ -171,6 +188,7 @@ body {
 .navbar__icon .bx {
   padding: 0.2rem;
   color: var(--primary-color);
+  transition: color 300ms ease-in;
 }
 
 /* *** HERO-SECTION *****/
@@ -202,7 +220,8 @@ body {
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
-  color: var(--primary-color);
+  color: var(--hero-text-color);
+  transition: color 300ms ease-in;
 }
 
 .hero__text h6,
@@ -222,8 +241,9 @@ body {
   line-height: 100%;
   color: var(--secondary-color);
   padding: 0.3rem;
-  border: var(--primary-color) 1px solid;
+  border: var(--hero-text-color) 1px solid;
   border-radius: 20px;
+  transition: color 300ms ease-in, border 300ms ease-in;
 }
 
 /* *** HERO-SECTION *****/
@@ -231,6 +251,8 @@ body {
 .about-section {
   margin-top: 3rem;
   background-color: var(--primary-color);
+  color: var(--white);
+  transition: color 300ms ease-in;
 }
 
 .about__contents {
@@ -246,6 +268,7 @@ body {
   padding: 0.7rem 2.5rem;
   border-radius: 30px;
   border: var(--white) 1px solid;
+  transition: border 300ms ease-in;
 }
 
 .about__descriptions p {
