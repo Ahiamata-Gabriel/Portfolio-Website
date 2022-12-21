@@ -36,6 +36,51 @@
   .header__navLinks {
     display: none;
   }
+
+  .container {
+    padding: 0 4rem 0 4rem;
+  }
+
+  .logo__container a {
+    font-size: 1.5rem;
+  }
+
+  .cv__container {
+    gap: 1rem;
+  }
+
+  .cv__container a {
+    font-size: 1.3rem;
+  }
+
+  .cv__container i {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .download__container {
+    padding: 0 1.3rem 0 1.3rem;
+  }
+
+  /* *** HERO-SECTION *****/
+
+  .hero-section {
+    margin-top: 7.6rem;
+    grid-template-columns: 1fr;
+  }
+
+  .hero__image {
+    width: 65%;
+  }
+
+  .hero__text {
+    font-size: 1.5rem;
+  }
+
+  .hero__text h6,
+  .normal {
+    font-size: 2.1rem;
+  }
 }
 
 /* /////////////// FOR NAV DISPLAYS ONLY ///////////////////// */
