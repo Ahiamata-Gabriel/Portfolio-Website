@@ -246,7 +246,7 @@ body {
   transition: color 300ms ease-in, border 300ms ease-in;
 }
 
-/* *** HERO-SECTION *****/
+/* *** ABOUT-SECTION *****/
 
 .about-section {
   margin-top: 3rem;
@@ -273,6 +273,14 @@ body {
 
 .about__descriptions p {
   text-align: justify;
+}
+
+/* *** SKILLS-SECTION *****/
+
+.skills-section {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  transition: color 300ms ease-in;
 }
 
 /* *** SCROLL BAR *****/
