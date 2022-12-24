@@ -242,7 +242,7 @@ body {
   line-height: 100%;
   color: var(--secondary-color);
   padding: 0.3rem;
-  border: var(--hero-text-color) 1px solid;
+  border: var(--hero-text-color) 2px solid;
   border-radius: 20px;
   transition: color 300ms ease-in, border 300ms ease-in;
 }
@@ -253,7 +253,7 @@ body {
   margin-top: 3rem;
   background-color: var(--primary-color);
   color: var(--white);
-  transition: color 300ms ease-in;
+  transition: color 300ms ease-in, background-color 300ms ease-in;
   padding: 6.6rem 0 6.6rem 0;
 }
 
@@ -370,9 +370,9 @@ body {
 /* *** PROJECTS-SECTION *****/
 
 .projects-section {
-  margin-top: 3rem;
   padding: 7.6rem 0 7.6rem 0;
   background-color: var(--background-color);
+  transition: background-color 300ms ease-in;
 }
 .projects__grid {
   display: grid;
@@ -397,6 +397,7 @@ body {
   line-height: 3.4rem;
   letter-spacing: 0.2px;
   border-radius: 30px;
+  transition: color 300ms ease-in, border 300ms ease-in;
 }
 
 .outer__container {
@@ -406,6 +407,7 @@ body {
   flex-direction: column;
   background-color: var(--primary-color);
   margin-top: 2rem;
+  transition: background-color 300ms ease-in;
 }
 
 .project__image {
@@ -429,7 +431,7 @@ body {
 
 .projects__btn {
   background-color: transparent;
-  color: var(--white);
+
   padding: 0.2rem 2.5rem;
   border-radius: 30px;
   font-size: 1.5rem;
@@ -437,6 +439,103 @@ body {
   line-height: 3.4rem;
   letter-spacing: 0.2px;
   border: var(--white) 1px solid;
+  transition: border 300ms ease-in;
+}
+
+.projects__btn a {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 300ms ease-in;
+}
+
+/* *** FOOTER SECTION ***  */
+
+.footer-section {
+  padding: 6.6rem 0 6.6rem 0;
+  background-color: var(--primary-color);
+  color: var(--white);
+  transition: color 300ms ease-in, background-color 300ms ease-in;
+}
+
+.first__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.footer__name {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.2px;
+}
+
+.phone {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.phone a {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 300ms ease-in;
+}
+
+.phone i {
+  font-size: 2rem;
+}
+
+.phone a,
+.footer__number,
+.second__box a {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.2px;
+}
+
+.second__box,
+.third__box,
+.fouth__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.second__box a {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 300ms ease-in;
+}
+
+.third__box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.3rem;
+  border-radius: 30px;
+  border: var(--white) 2px solid;
+  transition: border 300ms ease-in;
+}
+
+.third__box i {
+  background-color: var(--white);
+  padding: 0.2rem;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  transition: color 300ms ease-in, background-color 300ms ease-in;
+}
+
+.fouth__box h6 {
+  font-weight: 200;
+  font-size: 1.1rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.2px;
 }
 
 /* *** SCROLL BAR *****/

@@ -25,14 +25,71 @@
 /* *** Tablets *** */
 @media (min-width: 481px) and (max-width: 768px) {
   /* ////////////////// */
+  body {
+    background-color: aqua;
+  }
+
+  .floating__nav__items {
+    gap: 5rem;
+  }
+
+  .hero__image {
+    width: 80%;
+  }
+
   .header__navLinks {
     display: none;
+  }
+
+  .hero-section {
+    grid-template-columns: 55% 45%;
+    gap: 0;
+  }
+  .hero__text {
+    font-size: 1.5rem;
+    order: 1;
+    align-items: flex-start;
+  }
+
+  .hero__handles .bx {
+    font-size: 2.5rem;
+  }
+
+  .hero__image-container {
+    justify-content: flex-start;
+    order: 2;
+  }
+
+  .hero__text h6,
+  .normal {
+    font-size: 2rem;
+  }
+
+  .footer__name {
+    font-size: 2.2rem;
+  }
+
+  .phone i {
+    font-size: 2.7rem;
+  }
+
+  .phone a,
+  .footer__number,
+  .second__box a {
+    font-size: 2.3rem;
+  }
+
+  .fouth__box h6 {
+    font-size: 1.5rem;
   }
 }
 
 /* *** Mobile phones *** */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 341px) and (max-width: 480px) {
   /* ////////////////// */
+  /* body {
+    background-color: orange;
+  } */
   .header__navLinks {
     display: none;
   }
@@ -85,9 +142,87 @@
 
 /* /////////////// FOR NAV DISPLAYS ONLY ///////////////////// */
 /* *** Smaller  phones *** */
-@media (max-width: 319px) {
+@media (max-width: 340px) {
   /* ////////////////// */
+
+  /* body {
+    background-color: red;
+  } */
   .header__navLinks {
     display: none;
+  }
+
+  .container {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .floating__nav__items {
+    gap: 2rem;
+  }
+
+  .logo__container a {
+    font-size: 1.3rem;
+  }
+
+  .cv__container {
+    gap: 1rem;
+  }
+
+  .cv__container a {
+    font-size: 1rem;
+    line-height: 2.4rem;
+  }
+
+  .cv__container i {
+    font-size: 1.5rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__image {
+    width: 70%;
+  }
+  .hero__text {
+    font-size: 1.3rem;
+  }
+
+  .hero__text h6,
+  .normal {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 100%;
+  }
+
+  .hero__handles .bx {
+    font-size: 2rem;
+  }
+
+  .about__heading {
+    font-size: 1.5rem;
+  }
+
+  .about__descriptions p {
+    font-size: 1.3rem;
+  }
+
+  .second__box,
+  .third__box,
+  .fouth__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .phone i {
+    font-size: 1.5rem;
+  }
+
+  .phone a,
+  .footer__number,
+  .second__box a {
+    font-size: 1.1rem;
   }
 }
