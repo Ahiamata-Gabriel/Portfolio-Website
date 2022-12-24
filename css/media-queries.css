@@ -41,9 +41,11 @@
     order: 1;
     align-items: flex-start;
   }
+  .skills__grid {
+    grid-template-columns: 1fr 1fr;
+  }
 
   .projects__grid {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -89,6 +91,9 @@
   .hero__text h6,
   .normal {
     font-size: 2rem;
+  }
+  .projects__grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .footer__name {

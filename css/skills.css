@@ -1,0 +1,79 @@
+.skills-section {
+  padding: 6.6rem 0 6.6rem 0;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  transition: color 300ms ease-in;
+}
+
+.skills__contents {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.front-end__heading,
+.other__skills-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  letter-spacing: 0.2px;
+}
+
+.skills__heading {
+  background-color: var(--primary-color);
+  padding: 0.4rem 2.5rem;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3.4rem;
+  letter-spacing: 0.2px;
+  transition: background-color 300ms ease-in;
+}
+.frontEnd__skills-container,
+.other__skills-container {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.frontEnd__skills,
+.other__skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--faded-green);
+  gap: 1rem;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.other__skills-heading {
+  margin-top: 1rem;
+}
+
+.line-one,
+.line-two {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.line-one i,
+.line-two i,
+.line-one h4,
+.line-two h4 {
+  padding-right: 0.2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.2px;
+}
+
+.line-one i,
+.line-two i {
+  color: #000000;
+}
