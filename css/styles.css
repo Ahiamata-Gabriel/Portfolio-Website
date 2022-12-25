@@ -249,6 +249,15 @@ body {
   transition: color 300ms ease-in, border 300ms ease-in;
 }
 
+.hero__handles .bx {
+  box-shadow: inset 0 0 0 0 hsla(0, 0%, 4%, 0.3);
+  transition: color 400ms ease-in-out, box-shadow 400ms ease-in-out;
+}
+.hero__handles .bx:hover {
+  box-shadow: inset 115px 0 0 0 var(--secondary-color);
+  color: var(--white);
+}
+
 /* *** ABOUT-SECTION *****/
 
 .about-section {
@@ -277,6 +286,16 @@ body {
   font-weight: 600;
   line-height: 3.4rem;
   letter-spacing: 0.2px;
+}
+/* *** HOVER EFFECT FOR HEADINGS *****/
+
+.about__heading {
+  box-shadow: inset 0 0 0 0 hsla(0, 0%, 4%, 0.3);
+  transition: color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+.about__heading:hover {
+  box-shadow: inset 100px 0 0 0 var(--white);
+  color: var(--primary-color);
 }
 
 .about__descriptions p {
@@ -312,6 +331,15 @@ body {
   transition: background-color 300ms ease-in;
 }
 
+.skills__heading {
+  box-shadow: inset 0 0 0 0 hsla(0, 0%, 4%, 0.3);
+  transition: color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+.skills__heading:hover {
+  box-shadow: inset 90px 0 0 0 var(--white);
+  color: var(--primary-color);
+}
+
 .skills__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -320,7 +348,7 @@ body {
 
 .frontEnd__skills-container,
 .otherSkills__container {
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 100%;
 }
 
@@ -404,6 +432,15 @@ body {
   letter-spacing: 0.2px;
   border-radius: 30px;
   transition: color 300ms ease-in, border 300ms ease-in;
+}
+
+.project__heading {
+  box-shadow: inset 0 0 0 0 hsla(0, 0%, 4%, 0.3);
+  transition: color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+.project__heading:hover {
+  box-shadow: inset 115px 0 0 0 var(--primary-color);
+  color: var(--white);
 }
 
 .outer__container {
@@ -537,11 +574,26 @@ body {
   transition: color 300ms ease-in, background-color 300ms ease-in;
 }
 
+.third__box .bx {
+  box-shadow: inset 0 0 0 0 hsla(0, 0%, 4%, 0.3);
+  transition: color 400ms ease-in-out, box-shadow 400ms ease-in-out;
+}
+.third__box .bx:hover {
+  box-shadow: inset 115px 0 0 0 var(--secondary-color);
+  color: var(--white);
+}
+
 .fouth__box h6 {
   font-weight: 200;
   font-size: 1.1rem;
   line-height: 3.4rem;
   letter-spacing: 0.2px;
+}
+
+.color__box {
+  width: 100%;
+  background-color: var(--white);
+  height: 0.5px;
 }
 
 /* *** SCROLL BAR *****/

@@ -4,6 +4,95 @@
   .floating__nav__items {
     display: none;
   }
+
+  .hero-section {
+    grid-template-columns: 60% 40%;
+    gap: 0;
+    /* padding-right: 3rem; */
+    padding-left: 8rem;
+  }
+
+  .hero__image-container {
+    order: 2;
+    justify-content: start;
+  }
+
+  .hero__image {
+    width: 66%;
+  }
+
+  .hero__text {
+    font-size: 3rem;
+    order: 1;
+    align-items: flex-start;
+  }
+
+  .hero__text h6,
+  .normal {
+    font-size: 3.5rem;
+    display: flex;
+  }
+
+  .about__descriptions p {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .about__contents {
+    padding: 3rem 5rem 3rem 5rem;
+  }
+
+  .skills__contents,
+  .projects__contents,
+  .footer__contents {
+    padding: 0 5rem 0 5rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .frontEnd__heading,
+  .otherSkills__heading {
+    font-size: 1.9rem;
+  }
+
+  .line-one i,
+  .line-two i,
+  .line-one h4,
+  .line-two h4 {
+    font-size: 1.8rem;
+  }
+
+  .height {
+    height: 120px;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .first__box {
+    justify-content: space-around;
+  }
+
+  .footer__name {
+    font-size: 2.4rem;
+  }
+
+  .phone i {
+    font-size: 2.9rem;
+  }
+
+  .phone a,
+  .footer__number,
+  .second__box a {
+    font-size: 1.9rem;
+  }
+
+  .fouth__box h6 {
+    font-size: 1.7rem;
+  }
 }
 
 /* *** Desktops *** */
@@ -12,20 +101,96 @@
   .floating__nav__items {
     display: none;
   }
+
+  .hero-section {
+    grid-template-columns: 60% 40%;
+    gap: 0;
+    padding-right: 3rem;
+    padding-left: 10rem;
+  }
+
+  .hero__image-container {
+    order: 2;
+    justify-content: start;
+  }
+
+  .hero__image {
+    width: 60%;
+  }
+
+  .hero__text {
+    font-size: 2.5rem;
+    order: 1;
+    align-items: flex-start;
+  }
+
+  .hero__text h6,
+  .normal {
+    font-size: 3rem;
+    display: flex;
+  }
+
+  .about__descriptions p {
+    margin-top: 3rem;
+  }
+
+  .about__contents {
+    padding: 3rem 5rem 3rem 5rem;
+  }
+
+  .skills__contents,
+  .projects__contents,
+  .footer__contents {
+    padding: 0 5rem 0 5rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .height {
+    height: 120px;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .first__box {
+    justify-content: space-around;
+  }
+
+  .footer__name {
+    font-size: 2.4rem;
+  }
+
+  .phone i {
+    font-size: 2.9rem;
+  }
+
+  .phone a,
+  .footer__number,
+  .second__box a {
+    font-size: 1.9rem;
+  }
+
+  .fouth__box h6 {
+    font-size: 1.7rem;
+  }
 }
 
 /* *** Laptops *** */
 @media (min-width: 769px) and (max-width: 1023px) {
   /* ////////////////// */
-  body {
-    background-color: lightblue;
-  }
   .floating__nav__items {
     display: none;
   }
 
   .hero-section {
+    grid-template-columns: 60% 40%;
     gap: 0;
+    padding-right: 3rem;
+    padding-left: 10rem;
   }
 
   .hero__image-container {
@@ -33,7 +198,7 @@
   }
 
   .hero__image {
-    width: 75%;
+    width: 70%;
   }
 
   .hero__text {
@@ -41,28 +206,80 @@
     order: 1;
     align-items: flex-start;
   }
+
+  .about__descriptions p {
+    margin-top: 3rem;
+  }
+
+  .hero__text h6,
+  .normal {
+    display: flex;
+  }
+
+  .about__contents {
+    padding: 3rem 5rem 3rem 5rem;
+  }
+
+  .skills__contents,
+  .projects__contents,
+  .footer__contents {
+    padding: 0 5rem 0 5rem;
+  }
+
   .skills__grid {
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .line-one i,
+  .line-two i,
+  .line-one h4,
+  .line-two h4 {
+    font-size: 1.3rem;
+  }
+
+  .height {
+    height: 120px;
   }
 
   .projects__grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .first__box {
+    justify-content: space-around;
+  }
+
+  .footer__name {
+    font-size: 2.4rem;
+  }
+
+  .phone i {
+    font-size: 2.9rem;
+  }
+
+  .phone a,
+  .footer__number,
+  .second__box a {
+    font-size: 1.9rem;
+  }
+
+  .fouth__box h6 {
+    font-size: 1.7rem;
   }
 }
 
 /* *** Tablets *** */
 @media (min-width: 481px) and (max-width: 768px) {
   /* ////////////////// */
-  body {
-    background-color: aqua;
-  }
 
   .floating__nav__items {
     gap: 5rem;
   }
 
   .hero__image {
-    width: 80%;
+    width: 100%;
   }
 
   .header__navLinks {
@@ -70,9 +287,12 @@
   }
 
   .hero-section {
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 65% 35%;
     gap: 0;
+    padding-right: 3rem;
+    padding-left: 2rem;
   }
+
   .hero__text {
     font-size: 1.5rem;
     order: 1;
@@ -90,10 +310,29 @@
 
   .hero__text h6,
   .normal {
+    display: flex;
     font-size: 2rem;
   }
+
+  .about__descriptions p {
+    margin-top: 3rem;
+  }
+
+  .about__contents {
+    padding: 3rem 3rem 3rem 3rem;
+  }
+
+  .skills__contents,
+  .projects__contents {
+    padding: 0 3rem 0 3rem;
+  }
+
   .projects__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .first__box {
+    justify-content: space-around;
   }
 
   .footer__name {
@@ -107,7 +346,7 @@
   .phone a,
   .footer__number,
   .second__box a {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
   .fouth__box h6 {
@@ -118,13 +357,6 @@
 /* *** Mobile phones *** */
 @media (min-width: 341px) and (max-width: 480px) {
   /* ////////////////// */
-  /* body {
-    background-color: orange;
-  } */
-
-  /* .home-section {
-    height: 100vh;
-  } */
 
   .header__navLinks {
     display: none;
@@ -181,14 +413,6 @@
 @media (max-width: 340px) {
   /* ////////////////// */
 
-  /* body {
-    background-color: red;
-  } */
-
-  /* .home-section {
-    height: 100vh;
-  } */
-
   .header__navLinks {
     display: none;
   }
@@ -231,7 +455,7 @@
   .hero__text h6,
   .normal {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 100%;
   }
 
@@ -247,14 +471,11 @@
     font-size: 1.3rem;
   }
 
-  .second__box,
-  .third__box,
-  .fouth__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+  .line-one i,
+  .line-two i,
+  .line-one h4,
+  .line-two h4 {
+    font-size: 1.2rem;
   }
 
   .phone i {
@@ -265,5 +486,9 @@
   .footer__number,
   .second__box a {
     font-size: 1.1rem;
+  }
+
+  .third__box i {
+    font-size: 2.3rem;
   }
 }
