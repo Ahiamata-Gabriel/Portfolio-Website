@@ -466,6 +466,22 @@ body {
   letter-spacing: 0.2px;
 }
 
+.project__desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.project__desc p {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+}
+
 .btn__container {
   padding: 1.5rem 0 3rem 0;
   display: flex;
