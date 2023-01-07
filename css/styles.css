@@ -77,9 +77,9 @@ body {
   transition: color 300ms ease-in;
 }
 
-.logo a {
+/* .logo a {
   font-style: italic;
-}
+} */
 
 .nav__list a {
   position: relative;
