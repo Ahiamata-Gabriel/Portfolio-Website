@@ -18,7 +18,7 @@
   }
 
   .hero__image {
-    width: 66%;
+    width: 85%;
   }
 
   .hero__text {
@@ -115,7 +115,7 @@
   }
 
   .hero__image {
-    width: 60%;
+    width: 80%;
   }
 
   .hero__text {
@@ -201,7 +201,8 @@
   }
 
   .hero__image {
-    width: 70%;
+    /* width: 70%; */
+    width: 85%;
   }
 
   .hero__text {
@@ -399,7 +400,7 @@
   }
 
   .hero__image {
-    width: 75%;
+    width: 100%;
   }
 
   .hero__text {
@@ -449,7 +450,7 @@
   }
 
   .hero__image {
-    width: 70%;
+    width: 100%;
   }
   .hero__text {
     font-size: 1.3rem;
