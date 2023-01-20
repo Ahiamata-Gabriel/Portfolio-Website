@@ -56,16 +56,15 @@
     font-size: 1.9rem;
   }
 
-  .line-one i,
-  .line-two i,
   .line-one h4,
-  .line-two h4 {
+  .line-two h4,
+  .line-three h4 {
     font-size: 1.8rem;
   }
 
-  .height {
+  /* .height {
     height: 120px;
-  }
+  } */
 
   .projects__main-grid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -146,9 +145,9 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .height {
+  /* .height {
     height: 120px;
-  }
+  } */
 
   .projects__main-grid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -233,16 +232,15 @@
     gap: 1rem;
   }
 
-  .line-one i,
-  .line-two i,
   .line-one h4,
-  .line-two h4 {
+  .line-two h4,
+  .line-three h4 {
     font-size: 1.3rem;
   }
 
-  .height {
+  /* .height {
     height: 120px;
-  }
+  } */
 
   .projects__main-grid {
     grid-template-columns: 1fr 1fr;
@@ -409,6 +407,11 @@
   .normal {
     font-size: 2.1rem;
   }
+
+  .ticked {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 /* /////////////// FOR NAV DISPLAYS ONLY ///////////////////// */
@@ -473,10 +476,14 @@
     font-size: 1.3rem;
   }
 
-  .line-one i,
-  .line-two i,
+  .ticked {
+    width: 10px;
+    height: 10px;
+  }
+
   .line-one h4,
-  .line-two h4 {
+  .line-two h4,
+  .line-three h4 {
     font-size: 1.2rem;
   }
 
