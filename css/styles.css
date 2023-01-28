@@ -53,7 +53,6 @@ body {
   position: fixed;
   top: 0;
   transition: background-color 300ms ease-in;
-  /* height: 100vh; */
 }
 
 .header__contents {
@@ -76,10 +75,6 @@ body {
   transition: 300ms;
   transition: color 300ms ease-in;
 }
-
-/* .logo a {
-  font-style: italic;
-} */
 
 .nav__list a {
   position: relative;
@@ -143,6 +138,8 @@ body {
 .cv__container i {
   font-size: 2rem;
   cursor: pointer;
+  padding-left: 1rem;
+  align-self: center;
 }
 
 .download__container {
