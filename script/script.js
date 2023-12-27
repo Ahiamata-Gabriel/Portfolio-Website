@@ -14,3 +14,10 @@ moonToggle.addEventListener('click', function () {
   this.classList.toggle('bxs-sun');
   body.classList.toggle('dark-mode');
 });
+
+gsap.from('.hero__image', {
+  duration: 2,
+  scale: 0.8,
+  ease: 'back.inOut(1.7)',
+  x: 50,
+});

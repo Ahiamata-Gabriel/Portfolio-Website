@@ -19,6 +19,7 @@
     <!-- *** stylesheet **** -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
     <title>Gabriel | Ahiamata</title>
   </head>
   <body>
@@ -85,7 +86,10 @@
           </div>
 
           <div class="hero__text">
-            <h2><span class="normal"> Hi, I'm</span> Gabriel Ahiamata</h2>
+            <h2>
+              <span class="normal"> Hi, I'm</span
+              ><span id="animate__name"> Gabriel Ahiamata</span>
+            </h2>
             <h6>Frontend Software Engineer</h6>
             <div class="hero__handles">
               <a href="https://github.com/Ahiamata-Gabriel" target="_blank"
@@ -425,7 +429,7 @@
         </div>
       </div>
     </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="./script/script.js"></script>
   </body>
 </html>
