@@ -15,9 +15,18 @@ moonToggle.addEventListener('click', function () {
   body.classList.toggle('dark-mode');
 });
 
-gsap.from('.hero__image', {
-  duration: 2,
-  scale: 0.8,
-  ease: 'back.inOut(1.7)',
-  x: 50,
+//GSAP
+
+// gsap.from('.hero__image', {
+//   duration: 1.5,
+//   scale: 0.3,
+//   ease: 'in',
+//   x: 50,
+// });
+
+gsap.from('.staggers', {
+  duration: 1,
+  opacity: 0,
+  y: 100,
+  stagger: 0.25,
 });
