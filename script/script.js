@@ -15,6 +15,20 @@ moonToggle.addEventListener('click', function () {
   body.classList.toggle('dark-mode');
 });
 
+//LENIS SMOOT SCROLL
+const lenis = new Lenis();
+
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
 //GSAP
 
 // gsap.from('.hero__image', {
@@ -30,3 +44,17 @@ gsap.from('.staggers', {
   y: 100,
   stagger: 0.25,
 });
+
+// let tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.about__descriptions',
+//     start: 'top center',
+//     end: 'bottom center',
+//     scrub: true,
+//     markers: false,
+//   },
+// });
+
+// tl.to('.about__descriptions', {
+//   x: 800,
+// });
