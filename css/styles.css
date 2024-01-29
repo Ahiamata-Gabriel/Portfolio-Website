@@ -218,7 +218,7 @@ body {
 }
 
 .hero__text {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.8rem;
   line-height: 100%;
   display: flex;
@@ -633,6 +633,7 @@ body {
 .scroll-header {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
   transition: box-shadow 300ms ease-in;
+  z-index: 99;
 }
 
 ::-webkit-scrollbar {

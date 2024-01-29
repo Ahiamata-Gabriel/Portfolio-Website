@@ -39,7 +39,7 @@ gsap
     opacity: 0,
   })
   .from('.staggers', {
-    duration: 0.6,
+    duration: 0.7,
     opacity: 0,
     yPercent: 100,
     stagger: 0.25,
