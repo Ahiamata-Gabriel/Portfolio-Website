@@ -44,4 +44,12 @@ gsap
     yPercent: 100,
     stagger: 0.25,
     ease: 'back',
+  })
+  .from('.normal-2', {
+    text: 'Web Designer',
+    duration: 2,
+    ease: 'power1.in',
+    repeat: 2,
+    repeatDelay: 4,
+    yoyo: true,
   });
