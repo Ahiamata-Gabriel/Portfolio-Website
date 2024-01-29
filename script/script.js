@@ -17,12 +17,7 @@ moonToggle.addEventListener('click', function () {
 
 // ***GSAP***
 
-// gsap.from('.staggers', {
-//   duration: 1,
-//   opacity: 0,
-//   yPercent: 100,
-//   stagger: 0.25,
-// });
+gsap.registerPlugin(TextPlugin);
 
 gsap
   .timeline()
