@@ -218,16 +218,17 @@ body {
 }
 
 .hero__text {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.8rem;
   line-height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   color: var(--hero-text-color);
   transition: color 300ms ease-in;
+  overflow: hidden;
 }
 
 .hero__text h6,
@@ -239,6 +240,7 @@ body {
 
 .normal {
   padding-right: 0.3rem;
+  margin-bottom: 1rem;
 }
 
 .hero__handles .bx {
@@ -631,6 +633,7 @@ body {
 .scroll-header {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
   transition: box-shadow 300ms ease-in;
+  z-index: 99;
 }
 
 ::-webkit-scrollbar {

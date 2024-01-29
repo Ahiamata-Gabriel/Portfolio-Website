@@ -14,3 +14,34 @@ moonToggle.addEventListener('click', function () {
   this.classList.toggle('bxs-sun');
   body.classList.toggle('dark-mode');
 });
+
+// ***GSAP***
+
+// gsap.from('.staggers', {
+//   duration: 1,
+//   opacity: 0,
+//   yPercent: 100,
+//   stagger: 0.25,
+// });
+
+gsap
+  .timeline()
+  .from('.normal', {
+    xPercent: -100,
+    ease: 'back',
+    stagger: 0.25,
+    duration: 1.3,
+  })
+  .from('.normal-2', {
+    xPercent: -100,
+    ease: 'back',
+    duration: 1.3,
+    opacity: 0,
+  })
+  .from('.staggers', {
+    duration: 0.7,
+    opacity: 0,
+    yPercent: 100,
+    stagger: 0.25,
+    ease: 'back',
+  });
